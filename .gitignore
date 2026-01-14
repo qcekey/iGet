@@ -9,12 +9,30 @@ env/
 ENV/
 .venv
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.*.backup
+
 # Sensitive data
 data/settings.json
 data/*.session
 data/*.db
 data/tracker.json
 data/vacancies.json
+
+# SSH keys and certificates
+keyserver
+keyserver.pub
+*.pem
+*.key
+*.crt
+*.cert
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
 
 # IDE
 .vscode/
@@ -30,8 +48,18 @@ desktop.ini
 
 # Logs
 *.log
+*.log.*
 
 # Temporary files
 *.bat
-*.html
 *.tmp
+*.bak
+*.backup
+
+# Debug files
+linkedin_debug.html
+*.debug
+
+# Output directories
+output/
+logs/
